@@ -45,7 +45,7 @@ export class FoodService {
       // },
       {
         id: 4,
-        name: 'Chole Bhture',
+        name: 'Ice Cream',
         price: 6,
         cookTime: '40-50',
         favorite: true,
@@ -56,7 +56,7 @@ export class FoodService {
       },
       {
         id: 5,
-        name: 'Chole Bhture',
+        name: 'Idli-Dosa',
         price: 6,
         cookTime: '40-50',
         favorite: true,
@@ -67,7 +67,7 @@ export class FoodService {
       },
       {
         id: 6,
-        name: 'Chole Bhture',
+        name: 'Paneer Butter Masala',
         price: 6,
         cookTime: '40-50',
         favorite: true,
@@ -78,7 +78,7 @@ export class FoodService {
       },
       {
         id: 7,
-        name: 'Chole Bhture',
+        name: 'Chesse Pizza',
         price: 6,
         cookTime: '40-50',
         favorite: true,
@@ -89,7 +89,7 @@ export class FoodService {
       },
       {
         id: 8,
-        name: 'Chole Bhture',
+        name: 'Butter Paneer with Naan',
         price: 6,
         cookTime: '40-50',
         favorite: true,
