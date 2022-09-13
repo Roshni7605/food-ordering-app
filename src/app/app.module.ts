@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './components/search/search.component';
+import { TagsComponent } from './components/tags/tags.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SearchComponent } from './components/search/search.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

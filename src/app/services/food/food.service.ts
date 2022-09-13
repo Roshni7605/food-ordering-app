@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Food } from 'src/app/model/food';
+import { Tag } from 'src/app/model/Tag';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +20,7 @@ export class FoodService {
         origins: ['indian'],
         star: 4.0,
         imageUrl: '/assets/food1.jpg',
-        tags: ['FastFood','Pizza','Lunch']
+        tags: ['Pizza','Lunch']
       },
       // {
       //   id: 2,
@@ -52,7 +53,7 @@ export class FoodService {
         origins: ['indian'],
         star: 4.0,
         imageUrl: '/assets/food4.jpg',
-        tags: ['FastFood','Pizza','Lunch']
+        tags: ['FastFood','Lunch']
       },
       {
         id: 5,
@@ -63,7 +64,7 @@ export class FoodService {
         origins: ['indian'],
         star: 4.0,
         imageUrl: '/assets/food5.jpg',
-        tags: ['FastFood','Pizza','Lunch']
+        tags: ['FastFood','Lunch']
       },
       {
         id: 6,
@@ -98,6 +99,26 @@ export class FoodService {
         imageUrl: '/assets/food8.jpg',
         tags: ['FastFood','Pizza','Lunch']
       },
+    ]
+
+  }
+
+  getAllFoodByTag(tag: string) :Food[]{
+
+    return tag == 'All' ? this.getAll() : this.getAll().filter(food => food.tags?.includes(tag))
+
+    // if(tag == 'All')
+    // return this.getAll()
+    // else
+    // return this.getAll().filter(food => food.tags?.includes(tag))
+  }
+
+  getAllTag() : Tag[]{
+    return [
+      { name : 'All', count: 14},
+      { name : 'FastFood', count: 6},
+      { name : 'Pizza', count: 8},
+      { name : 'Lunch', count: 12},
     ]
 
   }
