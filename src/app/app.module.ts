@@ -10,6 +10,7 @@ import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './components/search/search.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FoodpageComponent } from './components/foodpage/foodpage.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CartComponent } from './components/cart/cart.component';
     HomeComponent,
     SearchComponent,
     TagsComponent,
-    CartComponent
+    CartComponent,
+    FoodpageComponent
   ],
   imports: [
     BrowserModule,

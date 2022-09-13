@@ -120,6 +120,9 @@ export class FoodService {
       { name : 'Pizza', count: 8},
       { name : 'Lunch', count: 12},
     ]
+  }
 
+  getFoodById(id: number): Food{
+    return this.getAll().find(food => food.id == id)!
   }
 }
