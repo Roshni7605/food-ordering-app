@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { SearchComponent } from './components/search/search.component';
 import { TagsComponent } from './components/tags/tags.component';
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { TagsComponent } from './components/tags/tags.component';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    TagsComponent
+    TagsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
